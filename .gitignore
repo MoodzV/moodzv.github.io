@@ -1,0 +1,20 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.lnk
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local scratch — keep drafts and raw video out of the repo
+/scratch/
+*.mp4
+*.mkv
+*.avi

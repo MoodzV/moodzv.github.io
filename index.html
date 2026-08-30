@@ -1,0 +1,246 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Roberto Tellez | IT specialist and communicator, Mexico City.
+  </title>
+
+  <meta name="description" content="Professional portfolio of Roberto Téllez — CompTIA A+ certified IT support technician based in Mexico City, with hands-on homelab projects in Active Directory, Windows Server and Linux.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Roberto Tellez, IT support, help desk, Tier 1, CompTIA A+, Active Directory, Windows Server, Linux, osTicket, ServiceNow, homelab, Mexico City, bilingual IT support" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#stack" class="nav__link">Tech Stack</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Roberto Tellez</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>An IT Specialist and Communicator based in Mexico City.</p>
+        <a href="#contact" class="btn btn--pink">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>SOHO Windows Infrastructure Lab</h3>
+              <p>
+                Deployed a virtualized environment using Windows Server as a domain controller and Windows 11 clients for systems administration testing.
+              </p>
+              <ul class="work__list">
+                <li>Active Directory</li>
+                <li>Windows Server</li>
+                <li>Group Policy</li>
+                <li>Virtualization</li>
+              </ul>
+
+              <div class="work__links">
+                <!-- TODO: replace # with the link to your 3-min English walkthrough video once recorded -->
+                <a href="https://www.youtube.com/watch?v=-LR0iIgFKLo" target="_blank" class="link__text">
+                  Watch Video (EN) <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/MoodzV/Homelab-portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Home Network Setup (SOHO)</h3>
+              <p>
+                Designed and configured a small office/home office network, including static IP assignment, DHCP scopes, and basic network segmentation for connected devices.
+              </p>
+              <ul class="work__list">
+                <li>Networking</li>
+                <li>DHCP / Static IP</li>
+                <li>Router Configuration</li>
+                <li>Troubleshooting</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/MoodzV/Homelab-portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Home Network Setup project" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>PC Building & Remote Support</h3>
+              <p>
+                Assembled custom desktops, including a high-end personal build and a graphic design workstation, plus ongoing remote troubleshooting for real users via AnyDesk and TeamViewer.
+              </p>
+              <ul class="work__list">
+                <li>Hardware Assembly</li>
+                <li>Remote Support</li>
+                <li>AnyDesk / TeamViewer</li>
+                <li>Diagnostics</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/MoodzV/Homelab-portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="PC Building and Remote Support project" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="stack">
+      <div class="row">
+        <h2>Tech Stack &amp; Tools</h2>
+        <div class="client__logos">
+          <img src="https://cdn.simpleicons.org/windows/000000" class="client__logo" alt="Windows" />
+          <img src="https://cdn.simpleicons.org/powershell/000000" class="client__logo" alt="PowerShell" />
+          <img src="https://cdn.simpleicons.org/linux/000000" class="client__logo" alt="Linux" />
+          <img src="https://cdn.simpleicons.org/virtualbox/000000" class="client__logo" alt="VirtualBox" />
+          <img src="https://cdn.simpleicons.org/git/000000" class="client__logo" alt="Git" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I'm a Communication &amp; Journalism graduate (FES Aragón, UNAM) transitioning into IT support, backed by
+              hands-on certifications (CompTIA A+, IBM Technical Support) and a self-built homelab where I manage
+              Active Directory, Windows Server, and networking. I'm currently studying for a B.Eng. in Computer
+              Systems Engineering at UNIR. My background in live radio production at Radio UNAM trained me to
+              communicate clearly under pressure — a skill I bring directly into technical support and
+              troubleshooting. Bilingual (English B2), I document and present all of my projects in English to
+              demonstrate both my technical hands-on practice and my communication skills.
+            </p>
+            <a href="./Roberto_Tellez_Sanchez_CV.pdf" class="btn" target="_blank">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- TODO: add your photo, e.g. <img class="about__photo" src="./images/roberto-tellez.jpg" alt="Roberto Téllez Sánchez" /> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          I'm currently looking to start my career in IT support / help desk. If you'd like to talk about an
+          opportunity, ask about my homelab projects, or just say "Hi 👋", feel free to reach out. I'll do my best
+          to respond promptly.
+        </p>
+        <a href="mailto:rtellez2010@gmail.com" class="btn">rtellez2010@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/MoodzV" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/roberto-tellez-038417201/" title="Link to Linkedin Profile" target="_blank" rel="noopener">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        &copy; 2026 Roberto Téllez Sánchez.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
