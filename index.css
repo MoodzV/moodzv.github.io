@@ -453,7 +453,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 16rem;
 }
 
 @media(max-width: 500px) {
@@ -468,7 +468,15 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-    flex: 0 0 30%;
+    flex: 0 0 38%;
+}
+
+.work__pending {
+    display: inline-block;
+    padding: .6rem 0;
+    font-family: 'Jost', sans-serif;
+    font-size: var(--font-size-small);
+    opacity: .6;
 }
 
 .work__list {
@@ -506,29 +514,53 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- Certifications ----- */
 /* --------------------------------------- */
 
-.client__logos {
+.certs__intro {
+    margin: 0 0 var(--gutter-medium) 0;
+    max-width: var(--container-normal-width);
+}
+
+.certs__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: var(--gutter-normal);
+}
+
+.cert {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
+    gap: var(--gutter-small);
+    padding: var(--gutter-small-1);
+    border: var(--border-light);
+    transition: border-color .3s, transform .3s;
 }
 
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
+.cert:hover,
+.cert:focus-within {
+    border-color: var(--pink);
+    transform: translateY(-.5rem);
 }
 
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
+.cert__name {
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-small);
+    margin-bottom: .8rem;
+    color: var(--white);
+}
 
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
+.cert__issuer {
+    margin: 0;
+    font-size: var(--font-size-small);
+    font-family: 'Jost', sans-serif;
+    opacity: .7;
+}
+
+.cert__verify {
+    align-self: flex-start;
+    font-size: var(--font-size-small);
 }
 
 /* --------------------------------------- */

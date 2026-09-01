@@ -24,7 +24,7 @@
 
   <!-- Put your site title here -->
   <title>
-    Roberto Tellez | IT specialist and communicator, Mexico City.
+    Roberto Téllez | IT Support Technician (CompTIA A+) — Mexico City
   </title>
 
   <meta name="description" content="Professional portfolio of Roberto Téllez — CompTIA A+ certified IT support technician based in Mexico City, with hands-on homelab projects in Active Directory, Windows Server and Linux.">
@@ -42,7 +42,7 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#stack" class="nav__link">Tech Stack</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -56,10 +56,10 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Roberto Tellez</span>
+          <span>Roberto Téllez</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>An IT Specialist and Communicator based in Mexico City.</p>
+        <p>CompTIA A+ certified IT Support Technician. Journalism graduate, studying Computer Systems Engineering.</p>
         <a href="#contact" class="btn btn--pink">Get in Touch</a>
       </div>
     </div>
@@ -78,94 +78,151 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>SOHO Windows Infrastructure Lab</h3>
+              <h3>Active Directory: Delegated Password Resets with AGDLP</h3>
               <p>
-                Deployed a virtualized environment using Windows Server as a domain controller and Windows 11 clients for systems administration testing.
+                A Windows Server domain where a help desk account can reset a locked-out user's password. Permissions are granted through AGDLP group and delegated control over a
+                dedicated OU. The tutorial shows how to reset the password.
               </p>
               <ul class="work__list">
                 <li>Active Directory</li>
+                <li>AGDLP group nesting</li>
+                <li>Delegated control (OU)</li>
                 <li>Windows Server</li>
-                <li>Group Policy</li>
-                <li>Virtualization</li>
               </ul>
 
               <div class="work__links">
-                <!-- TODO: replace # with the link to your 3-min English walkthrough video once recorded -->
-                <a href="https://www.youtube.com/watch?v=-LR0iIgFKLo" target="_blank" class="link__text">
+                <a href="https://www.youtube.com/watch?v=-LR0iIgFKLo" target="_blank" rel="noopener" class="link__text">
                   Watch Video (EN) <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/MoodzV/Homelab-portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/project-1.png" class="work__image" alt="Active Directory lab showing organizational units and delegated permissions" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Home Network Setup (SOHO)</h3>
+              <h3>Service Desk on Linux: osTicket on a LAMP Stack</h3>
               <p>
-                Designed and configured a small office/home office network, including static IP assignment, DHCP scopes, and basic network segmentation for connected devices.
+                A self-hosted ticketing system built entirely from the command line on Ubuntu Server — Apache, MySQL
+                and PHP configured by hand, with osTicket on top. The install is the foundation; the walkthrough
+                follows a single incident end to end: logged, categorised, prioritised, documented in internal work
+                notes, escalated, and closed with a customer-facing resolution.
               </p>
               <ul class="work__list">
-                <li>Networking</li>
-                <li>DHCP / Static IP</li>
-                <li>Router Configuration</li>
-                <li>Troubleshooting</li>
+                <li>Ubuntu Server (CLI, no GUI)</li>
+                <li>LAMP stack</li>
+                <li>osTicket</li>
+                <li>Ticket lifecycle &amp; escalation</li>
               </ul>
 
               <div class="work__links">
-                <a href="https://github.com/MoodzV/Homelab-portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <!-- TODO: when the video is recorded, replace this span with:
+                <a href="YOUTUBE_URL_HERE" target="_blank" rel="noopener" class="link__text">
+                  Watch Video (EN) <span>&rarr;</span>
+                </a> -->
+                <span class="work__pending">Walkthrough video coming soon</span>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Home Network Setup project" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>PC Building & Remote Support</h3>
-              <p>
-                Assembled custom desktops, including a high-end personal build and a graphic design workstation, plus ongoing remote troubleshooting for real users via AnyDesk and TeamViewer.
-              </p>
-              <ul class="work__list">
-                <li>Hardware Assembly</li>
-                <li>Remote Support</li>
-                <li>AnyDesk / TeamViewer</li>
-                <li>Diagnostics</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/MoodzV/Homelab-portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="PC Building and Remote Support project" />
+              <img src="./images/project-2.png" class="work__image" alt="osTicket service desk running on an Ubuntu Server LAMP stack" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Certifications ***** -->
 
-    <section class="client" id="stack">
+    <section class="certs" id="certifications">
       <div class="row">
-        <h2>Tech Stack &amp; Tools</h2>
-        <div class="client__logos">
-          <img src="https://cdn.simpleicons.org/windows/000000" class="client__logo" alt="Windows" />
-          <img src="https://cdn.simpleicons.org/powershell/000000" class="client__logo" alt="PowerShell" />
-          <img src="https://cdn.simpleicons.org/linux/000000" class="client__logo" alt="Linux" />
-          <img src="https://cdn.simpleicons.org/virtualbox/000000" class="client__logo" alt="VirtualBox" />
-          <img src="https://cdn.simpleicons.org/git/000000" class="client__logo" alt="Git" />
+        <h2>Certifications &amp; Credentials</h2>
+        <p class="certs__intro">
+          Every credential below links to the issuer's own public verification page.
+        </p>
+
+        <div class="certs__grid">
+
+          <!-- Each article with the cert class is one credential. -->
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">CompTIA A+ ce</h3>
+              <p class="cert__issuer">CompTIA</p>
+            </div>
+            <a href="https://www.credly.com/badges/104c32b6-5e88-447b-86c0-7f17a531200e/public_url"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">Core 1: Hardware and Network Troubleshooting</h3>
+              <p class="cert__issuer">IBM via Coursera</p>
+            </div>
+            <a href="https://www.credly.com/badges/b238ed89-a977-40fa-8175-d91be8672de0/public_url"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">Core 2: OS, Software, Security and Operational Procedures</h3>
+              <p class="cert__issuer">IBM via Coursera</p>
+            </div>
+            <a href="https://coursera.org/share/5224fbe12e98ea090febce459c337cd8"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">Introduction to Technical Support</h3>
+              <p class="cert__issuer">IBM via Coursera</p>
+            </div>
+            <a href="https://coursera.org/share/28231f13138022fd657c05c5fff5d822"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">Introduction to Computers</h3>
+              <p class="cert__issuer">Microsoft via Coursera</p>
+            </div>
+            <a href="https://coursera.org/share/dd94a723788fdb4c583eeef6a96a3624"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">Google AI Fundamentals</h3>
+              <p class="cert__issuer">Google via Coursera</p>
+            </div>
+            <a href="https://www.credly.com/badges/367acaa4-b0c3-4a59-8001-e07b351df0ff/public_url"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
+          <article class="cert">
+            <div>
+              <h3 class="cert__name">English — EF SET Certificate</h3>
+              <p class="cert__issuer">EF SET</p>
+            </div>
+            <a href="https://cert.efset.org/bq9nBM"
+               target="_blank" rel="noopener" class="link__text cert__verify">
+              Verify <span>&rarr;</span>
+            </a>
+          </article>
+
         </div>
       </div>
     </section>
@@ -204,9 +261,9 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          I'm currently looking to start my career in IT support / help desk. If you'd like to talk about an
-          opportunity, ask about my homelab projects, or just say "Hi 👋", feel free to reach out. I'll do my best
-          to respond promptly.
+          Based in Mexico City, available on-site or remote. I'm looking to start my career in IT support /
+          help desk. If you'd like to talk about an opportunity, ask about my homelab projects, or just say
+          "Hi 👋", feel free to reach out. I'll do my best to respond promptly.
         </p>
         <a href="mailto:rtellez2010@gmail.com" class="btn">rtellez2010@gmail.com</a>
       </div>
